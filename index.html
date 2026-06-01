@@ -10,7 +10,7 @@
   <meta property="og:title" content="كير CARE — خدمات تكنولوجية رقمية لتحسين جودة الرعاية الطبية في مصر" />
   <meta property="og:description" content="أبداً حياة صحية أفضل مدعومة لتكنولوجيا ذكية لتسهيل أحتياجاتك ليومية نظام رقمي موحد للوصول الفوري لبياناتك وربطك بمقدمي خدمات التمريض المنزلي فلحظة" />
   <meta property="og:image" content="https://i.postimg.cc/VkqLhqMw/70732-(1).png" />
-  <meta property="og:url" content="https://care-cte-me.netlify.app" />
+  <meta property="og:url" content="https://care-cte.me" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   
@@ -19,8 +19,8 @@
     "@context": "....",
     "@type": "MedicalOrganization",
     "name": "كير لتكنولوجيا الرعاية الرقمية و خدمات التمريض المنزلي (CARE)",
-    "url": "https://care-cte-me.netlify.app",
-    "logo": "https://i.postimg.cc/VkqLhqMw/70732-(1).png",
+    "url": "https://care-cte.me",
+    "logo": "https://i.postimg.cc/gJmm7th0/Black-and-White-Simple-Modern-Minimalist-Letter-G-Logo-(1).png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+201124280827",
@@ -502,7 +502,7 @@
 
   <!-- Loading Screen -->
   <div id="loader">
-    <div class="loader-logo">كير لتكنولوجيا الرعاية الرقمية<span>...</span></div>
+    <div class="loader-logo">كير تكنولوجي<span>...</span></div>
     <div class="loader-bar"><div class="loader-bar-fill"></div></div>
     <p style="font-size: 13px; color: var(--muted); font-family: var(--font-main);">أول منصة تعمل كوسيط موثوق لتخزين بيانات المرضى في مصر</p>
   </div>
@@ -510,13 +510,13 @@
   <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo"><img src="https://i.postimg.cc/VkqLhqMw/70732-(1).png" alt="شعار كير لتكنولوجيا الرعاية الرقمية width="160" height="44"></a>
+      <a href="#hero" class="nav-logo"><img src="https://i.postimg.cc/gJmm7th0/Black-and-White-Simple-Modern-Minimalist-Letter-G-Logo-(1).png" alt="شعار كير لتكنولوجيا الرعاية الرقمية width="160" height="44"></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">من نحن</a></li>
         <li><a href="#services">خدماتنا</a></li>
         <li><a href="#how">كيف يعمل</a></li>
         <li><a href="#why">لماذا كير</a></li>
-        <li><a href="articles.html">المقالات</a></li>
+        <li><a href="javascript:void(0)" onclick="openCareModal('careBlogModal'); return false;">المقالات</a></li>
         <li><a href="careers.html" style="color: var(--green)">وظائف</a></li>
         <li><a href="#join" class="nav-cta">سجّل الآن</a></li>
         <li><button class="lang-toggle-btn" id="langToggleDesktop" aria-label="تغيير اللغة">EN</button></li>
@@ -533,8 +533,8 @@
       <a href="#why">لماذا كير</a>
       <a href="#join">انضم إلينا</a>
       <a href="#contact">تواصل معنا</a>
-      <a href="articles.html">مقالات طبية</a>
-      <a href="careers.html" style="color:var(--green)">وظائف</a>
+      <li><a href="javascript:void(0)" onclick="openCareModal('careBlogModal'); return false;">المقالات</a></li>
+<a href="#" onclick="document.getElementById('careersModal').style.display='block'; return false;" class="nav-cta">وظائف وتدريب</a>
     </div>
   </nav>
 
@@ -710,22 +710,24 @@
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section id="how" class="section" style="background:var(--bg2)">
+ <section id="how" class="section" style="background:var(--bg2)">
     <div class="blob-container"><div class="blob" style="width:400px;height:400px;bottom:-100px;right:-100px;background:var(--purple);"></div></div>
     <div class="container">
       <div class="text-center reveal">
-        <span class="badge" style="margin-bottom:24px"><i class="fas fa-route"></i>&nbsp; كيف يعمل</span>
-        <h2 class="section-title">8 خطوات فقط <span class="text-green">للرعاية الكاملة داخل المنظومة</span></h2>
-        <p class="section-sub">سواء كنت مريضاً يحتاج رعاية أو ممرضاً يريد عملاً منظماً — كير صُمم ليكون بسيطاً ومثاليا لكليكما</p>
+        <span class="badge" style="margin-bottom:24px"><i class="fas fa-route"></i>&nbsp; كيف يعمل النظام</span>
+        <h2 class="section-title">12 خطوات فقط <span class="text-green">للرعاية الكاملة داخل المنظومة</span></h2>
+        <p class="section-sub">سواء كنت مريضاً يبحث عن رعاية موثوقة، أو ممرضاً يطمح لبيئة عمل منظمة، أو حتى منشأة طبية تسعى لتطوير نظامها الإلكتروني والاعتماد على بيئة سحابية موحدة.. 'كير' صُمم ليقدم لك تجربة بسيطة ومثالية لدعم القطاع الطبي.</p>
       </div>
+      
       <div class="how-tabs">
         <button class="tab-btn active" onclick="switchTab('patient', this)"><i class="fas fa-user"></i>للمريض</button>
         <button class="tab-btn" onclick="switchTab('nurse', this)"><i class="fas fa-user-nurse"></i>للممرض</button>
+        <button class="tab-btn" onclick="switchTab('facility', this)"><i class="fas fa-hospital"></i>للمنشأة</button>
       </div>
+      
       <div class="tab-content active" id="patient">
         <div class="steps-list">
-          <div class="step-item reveal"><div class="step-num">1</div><div class="step-body"><h4>حمل تطبيق CARE</h4><p>أضغط على الينك التالي لتحميل التطبيق او تواصل مع فريق الدعم لتحميل التطبيق "https://apkpure.com/p/cte.care2"</p></div></div>
+          <div class="step-item reveal"><div class="step-num">1</div><div class="step-body"><h4>حمل تطبيق CARE</h4><p>أضغط على الينك التالي لتحميل التطبيق او تواصل مع فريق الدعم لتحميل التطبيق "https://apkpure.com/p/cte.care2" أو قم بتحميل التطبيق بشكل مباشر من اسفل الموقع</p></div></div>
           <div class="step-item reveal"><div class="step-num">2</div><div class="step-body"><h4>توجه إلى أقرب منشأة طبية</h4><p>فعل حسابك وستلم كود التحقق الخاص بك لفتح التطبيق</p></div></div>
           <div class="step-item reveal reveal-delay-2"><div class="step-num">3</div><div class="step-body"><h4>تخزين البيانات</h4><p>أرفع جميع بياناتك الطبية على منصة موحدة أمنة لضمان الوصول الفوري </p></div></div>
           <div class="step-item reveal reveal-delay-2"><div class="step-num">4</div><div class="step-body"><h4>استلم الممرض والمكافأة</h4><p>يتم اختيار أقرب ممرض معتمد إليك فوراً، ويتم تفعيل المكافأة الترحيبية بالحساب مباشرة ككاش باك مضمون حقيقي.</p></div></div>
@@ -733,29 +735,23 @@
           <div class="step-item reveal reveal-delay-1"><div class="step-num">6</div><div class="step-body"><h4>حدد الموقع والموعد</h4><p>استخدم النظام لتحديد عنوانك تلقائياً أو أدخله يدوياً، ثم اختر الوقت المناسب لك.</p></div></div>
         </div>
       </div>
+      
       <div class="tab-content" id="nurse">
         <div class="steps-list">
-          <div class="step-item reveal"><div class="step-num">1</div><div class="step-body"><h4>سجّل وتحقق</h4><p>أرسل بياناتك ومؤهلاتك للمراجعة. فريق CARE-CTE يراجع ملف كل ممرض لضمان الجودة.</p></div></div>
-          <div class="step-item reveal reveal-delay-1"><div class="step-num">2</div><div class="step-body"><h4>حدد إتاحتك</h4><p>حدد الأيام والأوقات والزون الجغرافي الذي تفضل تغطيته. أنت المدير الكامل لجدولك.</p></div></div>
+          <div class="step-item reveal"><div class="step-num" style="background:var(--green); color:#000; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">1</div><div class="step-body"><h4>سجّل وتحقق</h4><p>أرسل بياناتك ومؤهلاتك للمراجعة. فريق CARE-CTE يراجع ملف كل ممرض لضمان الجودة.</p></div></div>
+          <div class="step-item reveal reveal-delay-1"><div class="step-num" style="background:var(--green); color:#000; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">2</div><div class="step-body"><h4>حدد إتاحتك</h4><p>حدد الأيام والأوقات والزون الجغرافي الذي تفضل تغطيته. أنت المدير الكامل لجدولك.</p></div></div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Why CARE -->
-  <section id="why" class="section">
-    <div class="container">
-      <div class="text-center reveal">
-        <span class="badge" style="margin-bottom:24px"><i class="fas fa-star"></i>&nbsp; لماذا CARE-CTE</span>
-        <h2 class="section-title">لماذا منصة <span class="text-purple">كير؟</span></h2>
-        <p class="section-sub">3 أسباب تجعل كير الخيار الأول والآمن للرعاية الصحية المنزلية وتخزين بيانات المرضى بطغية شاملة في مصر</p>
+      <div class="tab-content" id="facility">
+        <div class="steps-list">
+          <div class="step-item reveal"><div class="step-num" style="background:var(--green); color:#000; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">1</div><div class="step-body"><h4>تقديم طلب الانضمام</h4><p>فتح حساباً جديداً لمنشأتك الطبية وقدم طلب انضمام رسمي يتضمن (اسم المنشأة، العنوان بالتفصيل، رقم الهاتف، وصورة التسجيل الضريبي والترخيص) لبدء مراجعة وتفعيل ملفك</p></div></div>
+          <div class="step-item reveal reveal-delay-1"><div class="step-num" style="background:var(--green); color:#000; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">2</div><div class="step-body"><h4>ربط النظام السحابي الذكي</h4><p>تخلص من الأوراق تماماً؛ ابدأ بربط منشأتك بنظامنا السحابي المتطور لتخزين وإدارة بيانات المرضى إلكترونياً، مما يضمن للأطباء والمستشفيات بيئة عمل رقمية سريعة وآمنة للوصول الفوري لبيانات المرضى في أقل من 3 ثوانٍ</p></div></div>
+          <div class="step-item reveal reveal-delay-1"><div class="step-num" style="background:var(--green); color:#000; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">3</div><div class="step-body"><h4>تفعيل الهوية الموحدة للمرضى</h4><p>استخدم النظام الحسابي الموحد لتحديد هوية أي مريض بدقة؛ يتيح هذا النظام لطاقمك الطبي الوصول الفوري والتاريخي لبيانات المريض الصحية بمجرد دخوله المنشأة.</p></div></div>
+          <div class="step-item reveal reveal-delay-1"><div class="step-num" style="background:var(--green); color:#000; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">4</div><div class="step-body"><h4>استقبال المرضى وبدء الخدمة</h4><p>الآن منشأتك متصلة بالكامل بالمنظومة! يمكنك استقبال طلبات المرضى وتحديث سجلاتهم الطبية لحظياً بأعلى معايير الأمان والتتبع الذكي فـ كل شبر في مصر.</p></div></div>
+        </div>
       </div>
-      <div class="why-grid">
-        <div class="why-card reveal"><div class="why-icon"><i class="fas fa-shield-alt" style="color:var(--purple)"></i></div><h3>أمان تام وموثوقية</h3><p>جميع الممرضين والممرضات أو المنشأة الطبية يخضعون للتحقق الدقيق من الهوية والمؤهلات المهنية وصحية الحالة للسماح  لتعديل أو تحديث بيانات المرضى قبل الانضمام لـ CARE.</p></div>
-        <div class="why-card reveal reveal-delay-1"><div class="why-icon"><i class="fas fa-bolt" style="color:var(--green)"></i></div><h3>سرعة الاستجابة</h3><p>الربط الذكي يضمن وصول الطاقم الطبي المعتمد إليك لتلبية متطلبات الرعاية الفوريةأو الدعم الفني</p></div>
-        <div class="why-card reveal reveal-delay-2"><div class="why-icon"><i class="fas fa-tags" style="color:var(--gold)"></i></div><h3>مكافآت ترحيبية حقيقية</h3><p>تفعيل الحساب يمنحك مكافأة ترحيبية بقيمة 3000 جنيه كنسبة كاش باك مضمونة وحقيقية لشراء الادوية أو المستلزمات الطبية</p></div>
-        <div class="why-card reveal reveal-delay-3"><div class="why-icon"><i class="fas fa-bolt" style="color:var(--green)"></i></div><h3>تكنولوجيا سهلة</h3><p>تخزين بياناتك الطبية بطرق أمنة وسهلة مع رفيق تكنولوجي ذكي يضمن لك الوصول الفوري للبياناتك عند الطوارئ</p></div>
-      </div>
+      
     </div>
   </section>
 
@@ -766,7 +762,7 @@
         <div class="number-item reveal"><span class="num-val">150+</span><span class="num-lbl">شخص شارك في البحث الميداني</span><span class="num-sub">بمعرفة فريق CARE-CTE في مصر</span></div>
         <div class="number-item reveal reveal-delay-1"><span class="num-val">87%</span><span class="num-lbl">من المرضى يريدون كير</span><span class="num-sub">أبدوا رغبة ونية استخدام حقيقية</span></div>
         <div class="number-item reveal reveal-delay-2"><span class="num-val">91%</span><span class="num-lbl">من الممرضين يريدون الانضمام</span><span class="num-sub">سجلوا بالفعل لبدء تقديم الخدمات</span></div>
-        <div class="number-item reveal reveal-delay-3"><span class="num-val">تتبع لحظي للبيانات ومقديم الخدمة</span><span class="num-lbl">هدف الاستجابة الفورية</span><span class="num-sub">أعلى معدل سرعة وأمان في مصر</span></div>
+        <div class="number-item reveal reveal-delay-3"><span class="num-val">97%</span><span class="num-lbl">سرعة الاستجابة الفورية</span><span class="num-sub">أعلى معدل سرعة وأمان في مصر</span></div>
         <div class="number-item reveal reveal-delay-4"><span class="num-val">5M</span><span class="num-lbl">هدف تأمين بيانات 5 مليون روح مصرية</span><span class="num-sub">كـ هدف أساسي للمنظومة</span></div>
       </div>
     </div>
@@ -899,7 +895,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="logo"><img src="https://i.postimg.cc/VkqLhqMw/70732-(1).png" alt="كير لتكنولوجيا الرعاية الرقمية style="height:44px;width:auto;"></div>
+          <div class="logo"><img src="https://i.postimg.cc/gJmm7th0/Black-and-White-Simple-Modern-Minimalist-Letter-G-Logo-(1).png" alt="كير لتكنولوجيا الرعاية الرقمية style="height:44px;width:auto;"></div>
           <p>CARE-CTE أول منصة تعمل كوسيط موثوق لتخزين بيانات المرضى ونظام رعاية منزلية متكاملة في مصر</p>
         </div>
         <div class="footer-col">
@@ -1035,5 +1031,529 @@
       console.log(`Successfully verified dynamic reward for code ${userCode}: ${baseReward} EGP Cashback initialized.`);
     }
   </script>
+  <!-- ================================================================= -->
+<!--   حقن الشغل المطور: المقالات الذكية، البحث، وعرض المقال التفصيلي   -->
+<!--        تصميم ذكي منفصل تماماً دون المساس بهيكل كودك الأصلي         -->
+<!-- ================================================================= -->
+
+<style>
+  /* استايل النوافذ المنبثقة الذكية الفاخرة */
+  .care-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 16, 42, 0.96);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 20px;
+  }
+  .care-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+  }
+  .care-modal-wrapper {
+    background: var(--card2, #251f4a);
+    border: 1px solid var(--border, rgba(107, 92, 231, 0.3));
+    border-radius: 24px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.6), var(--glow-p);
+    position: relative;
+    transform: translateY(40px);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 40px;
+  }
+  .care-modal-overlay.active .care-modal-wrapper {
+    transform: translateY(0);
+  }
+  .care-modal-close {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: rgba(255, 107, 107, 0.15);
+    color: var(--accent, #ff6b6b);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+    z-index: 10;
+  }
+  .care-modal-close:hover {
+    background: var(--accent, #ff6b6b);
+    color: #fff;
+    transform: rotate(90deg);
+  }
+
+  .care-modal-logo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .care-modal-logo-header img {
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  /* 🔍 استايل شريط البحث الاحترافي - مطابق لـ edited-image.png */
+  .care-search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    position: relative;
+  }
+  .care-search-input {
+    width: 100%;
+    background: rgba(30, 26, 61, 0.8);
+    border: 1px solid rgba(107, 92, 231, 0.4);
+    border-radius: 50px;
+    padding: 15px 25px 15px 55px;
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    outline: none;
+    transition: all 0.3s;
+  }
+  .care-search-input:focus {
+    border-color: var(--green, #7ed957);
+    box-shadow: 0 0 15px rgba(126, 217, 87, 0.2);
+  }
+  .care-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: rgba(107, 92, 231, 0.8);
+    font-size: 18px;
+    pointer-events: none;
+  }
+
+  /* استايل شبكة المقالات */
+  .care-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+  }
+  .care-blog-card {
+    background: var(--card, #1e1a3d);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .care-blog-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--green);
+    box-shadow: var(--glow-g);
+  }
+  .care-blog-img-box {
+    width: 100%;
+    height: 180px;
+    background: var(--bg);
+    overflow: hidden;
+    position: relative;
+  }
+  .care-blog-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .care-blog-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(18, 16, 42, 0.8);
+    color: var(--green);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid rgba(126, 217, 87, 0.3);
+  }
+  .care-blog-body {
+    padding: 20px;
+    text-align: right;
+  }
+  .care-blog-body h4 {
+    font-family: var(--font-main);
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .care-blog-body p {
+    font-size: 13px;
+    color: var(--light);
+    line-height: 1.6;
+  }
+
+  /* 🟦 استايل مستطيل الرعاية الطبية الفخم الممتد - مطابق لـ edited-image_2.png */
+  .care-cta-banner {
+    background: linear-gradient(135deg, #5e4ae3 0%, #4633c6 100%);
+    border-radius: 24px;
+    padding: 40px 30px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 15px 40px rgba(94, 74, 227, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .care-cta-banner h3 {
+    color: #fff;
+    font-family: var(--font-main);
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .care-cta-banner p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.7;
+  }
+  .care-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .care-btn-whatsapp {
+    background: #7ed957;
+    color: #12102a;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  .care-btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(126, 217, 87, 0.4);
+  }
+  .care-btn-explore {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .care-btn-explore:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    transform: translateY(-3px);
+  }
+
+  /* استايل صفحة عرض المقال المنفرد بالكامل */
+  .care-single-article-view {
+    text-align: right;
+    display: none;
+  }
+  .care-single-title {
+    font-family: var(--font-main);
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .care-single-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border);
+  }
+  .care-single-content {
+    color: var(--light, #e2e8f0);
+    font-size: 15.5px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+  }
+
+  .care-policy-text {
+    color: var(--light);
+    font-size: 14.5px;
+    line-height: 1.9;
+    margin-top: 24px;
+    text-align: right;
+  }
+</style>
+
+<!-- [1] نافذة المقالات العامة المشتركة -->
+<div class="care-modal-overlay" id="careBlogModal">
+  <div class="care-modal-wrapper">
+    <button class="care-modal-close" onclick="closeCareModal('careBlogModal')"><i class="fas fa-times"></i></button>
+    
+    <!-- الواجهة الرئيسية للمقالات -->
+    <div id="careBlogMainView">
+      <div class="care-modal-logo-header">
+        <img src="https://i.postimg.cc/gJmm7th0/Black-and-White-Simple-Modern-Minimalist-Letter-G-Logo-(1).png" alt="شعار كير">
+        <span class="badge"><i class="fas fa-user-md"></i>&nbsp; جريدة المنظومة صوت المجتمع</span>
+        <h2 class="section-title" style="margin-top:12px; text-align: center;">موسوعة كير الثقافية للرد على <span class="text-green">المشكلات الصحية الطارئة</span></h2>
+      </div>
+
+      <!-- 🔍 شريط البحث الذكي المدمج -->
+      <div class="care-search-container">
+        <i class="fas fa-search care-search-icon"></i>
+        <input type="text" id="careSearchInput" class="care-search-input" placeholder="ابحث عن مقال طبي معين... (مثال: إغماء، حروق، جلطة)">
+      </div>
+
+      <!-- شبكة المقالات التفاعلية -->
+      <div class="care-blog-grid" id="careBlogGrid">
+        <!-- كارت 1 -->
+        <div class="care-blog-card" onclick="openFullArticle(1)">
+          <div class="care-blog-img-box">
+            <span class="care-blog-badge">إسعافات بالقاهرة</span>
+            <img src="https://i.postimg.cc/8ccfrztY/article1.jpg" alt="الإنعاش">
+          </div>
+          <div class="care-blog-body">
+            <h4>تمريض منزلي في القاهرة — دليلك الشامل لأفضل خدمة في 2025</h4>
+            <p>هل تبحث عن تمريض منزلي في القاهرةبأسعار واضحة وممرض معتمد يصلك في وقت قياسي؟ سواء كنت تحتاج إلى تركيب محلول وريدي، قياس السكر والضغط، أو رعاية متخصصة لأحد كبار السن في الأسرة، فإن الحصول على تمريض منزلي موثوق بات أسهل من أي وقت مضى مع منصة كير CARE.
+
+في هذا الدليل الشامل، ستتعرف على كل ما تحتاج معرفته عن خدمة التمريض المنزلي في محافظة القاهرة: الخدمات المتاحة، الأسعار، كيفية الاختيار الصحيح، وكيف تحصل على الخدمة في أقل من 15 دقيقة.</p>
+          </div>
+        </div>
+
+        <!-- كارت 2 -->
+        <div class="care-blog-card" onclick="openFullArticle(2)">
+          <div class="care-blog-img-box">
+            <span class="care-blog-badge">إرشادات أطباء</span>
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=500&q=80" alt="الجلطات">
+          </div>
+          <div class="care-blog-body">
+            <h4>التعرف على علامات الجلطة المفاجئة</h4>
+            <p>تذكر دائماً اختبار (FAST): ارتخاء جانبي للوجه، ضعف في الذراع، وصعوبة النطق عند ظهور هذه العلامات...</p>
+          </div>
+        </div>
+
+        <!-- كارت 3 -->
+        <div class="care-blog-card" onclick="openFullArticle(3)">
+          <div class="care-blog-img-box">
+            <span class="care-blog-badge">حروق وإصابات</span>
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80" alt="الحروق">
+          </div>
+          <div class="care-blog-body">
+            <h4>الخطوات الصحيحة لإسعاف الحروق</h4>
+            <p>ضع الجزء المصاب تحت ماء جاري فاتر لمدة لا تقل عن 10 إلى 15 دقيقة تجنب وضع أي معجون تماماً...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📖 واجهة عرض المقال الكامل التلقائية (مخفية وتظهر عند النقر) -->
+    <div id="careSingleArticleView" class="care-single-article-view">
+      <button class="care-btn-explore" style="margin-bottom: 20px; padding: 6px 16px; font-size: 13px;" onclick="backToBlogList()"><i class="fas fa-arrow-right"></i> العودة للمقالات</button>
+      
+      <h2 class="care-single-title" id="articleFullTitle">اسم المقال يظهر هنا</h2>
+      <img src="" alt="" class="care-single-img" id="articleFullImg">
+      <div class="care-single-content" id="articleFullContent">محتوى المقال التفصيلي...</div>
+
+      <!-- 🟦 مستطيل الدعم الفخم المدمج بالأسفل بزرارين تفاعليين -->
+      <div class="care-cta-banner">
+        <h3>هل تحتاج إلى رعاية طبية في المنزل؟</h3>
+        <p>فريق كير متاح على مدار 24 ساعة في مصر لتلبية جميع احتياجاتك الطبية والتمريضية بأسعار ثابتة.</p>
+        <div class="care-cta-buttons">
+          <!-- زر الواتساب المباشر المربوط بـ API -->
+          <a href="https://wa.me/201017400321" target="_blank" class="care-btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> احجز الآن عبر واتساب
+          </a>
+          <!-- زر استكشف خدماتنا للعودة للرئيسية لقسم الخدمات -->
+          <button class="care-btn-explore" onclick="navigateToServices()">
+            استكشف خدماتنا
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- [2] نافذة سياسة الخصوصية الرسمية -->
+<div class="care-modal-overlay" id="carePrivacyModal">
+  <div class="care-modal-wrapper">
+    <button class="care-modal-close" onclick="closeCareModal('carePrivacyModal')"><i class="fas fa-times"></i></button>
+    <div class="care-modal-logo-header">
+      <img src="https://i.postimg.cc/gJmm7th0/Black-and-White-Simple-Modern-Minimalist-Letter-G-Logo-(1).png" alt="شعار كير">
+      <span class="badge"><i class="fas fa-shield-alt"></i>&nbsp; وثيقة قانونية</span>
+      <h2 class="section-title" style="margin-top:12px;">سياسة الخصوصية <span class="text-green">لمنظومة CARE-CTE</span></h2>
+    </div>
+    <div class="care-policy-text">
+      <p>مرحباً بك في منصة كير الطبية (CARE). تلتزم شركة <strong>CARE Technology Egypt</strong> بحماية بياناتك الشخصية والطبية بأقصى معايير التشفير والأمان الرقمي وفق القوانين والتشريعات المنظمة.</p>
+      <h3>1. البيانات التي نجمعها</h3>
+      <p>نقوم بجمع البيانات اللازمة لتقديم الخدمة والوساطة الطبية الموثوقة وبناء السجلات السحابية الآمنة للمرضى والمنشآت.</p>
+      <h3>2. حماية وتشفير البيانات</h3>
+      <p>تُخزن جميع سجلات المرضى عبر خوادم سحابية مشفرة بالكامل. لا يتم السماح بالوصول الفوري للتاريخ الطبي إلا للمنشآت الطبية المعتمدة والأطباء والممرضين المسؤولين عن حالتك عند تفعيل كود التحقق لضمان الخصوصية.</p>
+    </div>
+  </div>
+</div>
+
+<!-- [3] نافذة الشروط والأحكام -->
+<div class="care-modal-overlay" id="careTermsModal">
+  <div class="care-modal-wrapper">
+    <button class="care-modal-close" onclick="closeCareModal('careTermsModal')"><i class="fas fa-times"></i></button>
+    <div class="care-modal-logo-header">
+      <img src="https://i.postimg.cc/gJmm7th0/Black-and-White-Simple-Modern-Minimalist-Letter-G-Logo-(1).png" alt="شعار كير">
+      <span class="badge"><i class="fas fa-file-contract"></i>&nbsp; اتفاقية الاستخدام</span>
+      <h2 class="section-title" style="margin-top:12px;">الشروط والأحكام <span class="text-green">وحقوق مستخدم كير</span></h2>
+    </div>
+    <div class="care-policy-text">
+      <p>باستخدامك للموقع أو لتطبيق كير (CARE)، فإنك توافق تماماً على الامتثال للشروط والأحكام التابعة لمؤسسة CARE Technology Egypt:</p>
+      <h3>1. طبيعة الخدمة والمنصة</h3>
+      <p>تصنف "كير" باعتبارها <strong>وسيطاً رقمياً موثوقاً وآمناً</strong> يربط بين المرضى، والمنشآت الطبية، ومقدمي خدمات التمريض المنزلي المعتمدين لضمان الجودة الفائقة دون تدخل ورقي تقليدي.</p>
+      <h3>2. الرفيق الطبي</h3>
+      <p>رغبةً من منصة كير (CARE) في ضمان أعلى معايير الأمان والسلامة، لا يتم قبول أو تفعيل أي طلب أو استمارة إلكترونية إلا بعد مراجعة واعتماد رسمي من المنشأة الطبية الشريكة أو الطبيب المعالج المشرف على الحالة؛ وذلك لضمان تسليم المنتجات الطبية والرقمية لمستحقيها عبر مسارات موثوقة ومحددة.
+كما يرجى العلم أنه في حال فقدان، تلف، أو حدوث أي عطل فني في الأسورة الذكية الخاصة بالفحص الطبي، لا يحق للمستخدم محاولة تعديل أو إجراء عمليات برمجية أو تقديم طلبات عشوائية عبر المنصة. وفي هذه الحالة، يتم التوجه مباشرة إلى أقرب منشأة طبية معتمدة تابعة للمنظومة، لطلب استبدال المنتج وتوثيق وتحديث البيانات الطبية السحابية بدقة متناهية لضمان استمرارية الرعاية</p>
+      <h3>3. مسؤولية الحساب</h3>
+      <p>المستخدم مسؤول مسؤولية كاملة عن دقة البيانات الطبية المرفوعة على المنصة السحابية، وعن الحفاظ على كود التحقق السري الخاص به.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 🧠 داتا المقالات ومحرك الإدارة والبحث والربط الديناميكي بالكامل -->
+<script>
+  // قاعدة بيانات المقالات الطبية الموسعة لعرضها ديناميكياً
+  const careArticlesDatabase = {
+    1: {
+      title: "التعامل الفوري والأسس الطبية الصحيحة مع حالات الإغماء المفاجئ",
+      img: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=1000&q=80",
+      content: "<p>عند تعرض شخص ما للإغماء أو فقدان الوعي المؤقت، يجب التصرف بهدوء وسرعة. أولاً: تأكد من تنفس المريض ومجرى الهواء. ثانياً: ارفع قدمي الشخص المصاب بحوالي 30 سم عن مستوى الأرض، حيث يساعد ذلك في استعادة تدفق الدم والأكسجين بكفاءة إلى الدماغ. ثالثاً: قم بفك أي ملابس ضيقة حول الرقبة أو الخصر.</p><p><strong>تحذير طبي حاسم:</strong> لا تحاول إعطاء الشخص فاقد الوعي أي سوائل أو مأكولات عن طريق الفم نهائياً لمنع حدوث الاختناق، وإذا استمر الإغماء لأكثر من دقيقة، يجب طلب الرعاية الطبية الفورية.</p>"
+    },
+    2: {
+      title: "كيفية التعرف السريع على علامات وأعراض الجلطة المفاجئة وإنقاذ المريض",
+      img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1000&q=80",
+      content: "<p>تعتبر الجلطات والسكتات الدماغية من الحالات الطبية الطارئة التي تتطلب تدخلاً في غضون دقائق. للتعرف عليها، نعتمد المقياس العالمي الفوري (FAST):</p><ul><li><strong>F - الوجه (Face):</strong> اطلب من الشخص الابتسام، وابحث عن أي ارتخاء أو هبوط في أحد جانبي الوجه.</li><li><strong>A - الذراعين (Arms):</strong> اطلب منه رفع كلتا ذراعيه، ولاحظ ما إذا كانت إحداهما تسقط لأسفل.</li><li><strong>S - الكلام (Speech):</strong> اطلب منه تكرار جملة بسيطة، ودقق في وجود أي ثقل أو عدم وضوح في الحروف.</li><li><strong>T - الوقت (Time):</strong> عند ملاحظة أي من هذه العلامات، توجه فوراً إلى أقرب مستشفى مجهز؛ لأن عامل الوقت ينقذ خلايا الدماغ من التلف المستديم.</li></ul>"
+    },
+    3: {
+      title: "الخطوات العلمية والطبية الصحيحة لإسعاف الحروق المنزلية بمختلف درجاتها",
+      img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80",
+      content: "<p>تنقسم الحروق لدرجات، ولكن في الإسعاف الأولي الفوري للحروق الحرارية البسيطة والمتوسطة، يجب اتباع الآتي: ضع المنطقة المصابة تحت ماء جاري معتدل البرودة (فاتر) لمدة تتراوح بين 10 إلى 15 دقيقة لتخفيف الحرارة المتغلغلة في الأنسجة.</p><p><strong>الأخطاء الشائعة والخطيرة:</strong> يمنع تماماً وضع قطع الثلج المباشرة على الحرق لأنها تسبب صدمة حرارية وتدمير إضافي للخلايا، كما يحظر كلياً استخدام معجون الأسنان أو المواد الدسمة كـ الزبدة؛ لأنها تحبس الحرارة وتسبب التهابات بكتيرية حادة للأنسجة المصابة.</p>"
+    }
+  };
+
+  function openCareModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if(modal) {
+      modal.style.display = 'flex';
+      setTimeout(() => { modal.classList.add('active'); }, 10);
+      document.body.style.overflow = 'hidden';
+      // العودة للرئيسية للمقالات دائماً عند فتح المودال من البداية
+      if(modalId === 'careBlogModal') { backToBlogList(); }
+    }
+  }
+
+  function closeCareModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if(modal) {
+      modal.classList.remove('active');
+      setTimeout(() => { modal.style.display = 'none'; }, 400);
+      document.body.style.overflow = '';
+    }
+  }
+
+  // دالة فتح المقال كاملاً ديناميكياً
+  function openFullArticle(id) {
+    const data = careArticlesDatabase[id];
+    if(data) {
+      document.getElementById('careBlogMainView').style.display = 'none';
+      
+      document.getElementById('articleFullTitle').innerText = data.title;
+      document.getElementById('articleFullImg').src = data.img;
+      document.getElementById('articleFullImg').alt = data.title;
+      document.getElementById('articleFullContent').innerHTML = data.content;
+      
+      document.getElementById('careSingleArticleView').style.display = 'block';
+      document.querySelector('#careBlogModal .care-modal-wrapper').scrollTop = 0;
+    }
+  }
+
+  // دالة العودة لقائمة المقالات الرئيسية
+  function backToBlogList() {
+    document.getElementById('careSingleArticleView').style.display = 'none';
+    document.getElementById('careBlogMainView').style.display = 'block';
+  }
+
+  // دالة الانتقال لسكشن الخدمات في الموقع الرئيسي
+  function navigateToServices() {
+    closeCareModal('careBlogModal');
+    // توجيه المتصفح فورا لسكشن الخدمات الحالي بموقعك
+    setTimeout(() => {
+      window.location.hash = 'services';
+    }, 450);
+  }
+
+  // 🔍 محرك الفلترة والبحث اللحظي (Live Search Engine)
+  document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById('careSearchInput');
+    if(searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        const cards = document.querySelectorAll('#careBlogGrid .care-blog-card');
+        
+        cards.forEach(card => {
+          const title = card.querySelector('h4').innerText.toLowerCase();
+          const desc = card.querySelector('p').innerText.toLowerCase();
+          
+          if(title.includes(query) || desc.includes(query)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // محرك الربط التلقائي الاحتياطي لروابط الهيدر والفوتر بصفحتك
+    const allLinks = document.querySelectorAll("a, button");
+    allLinks.forEach(link => {
+      const text = link.textContent.trim();
+      if(text === "سياسة الخصوصية") {
+        link.removeAttribute("href");
+        link.setAttribute("onclick", "openCareModal('carePrivacyModal'); return false;");
+      }
+      if(text === "الشروط والأحكام" || text === "شروط الاستخدام" || text === "حقوق المستخدم داخل التطبيق") {
+        link.removeAttribute("href");
+        link.setAttribute("onclick", "openCareModal('careTermsModal'); return false;");
+      }
+    });
+  });
+</script>
+<div id="careersModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:999999; background:rgba(0,0,0,0.95); backdrop-filter:blur(10px);">
+    
+    <button onclick="document.getElementById('careersModal').style.display='none'" 
+            style="position:absolute; top:20px; right:30px; background:none; border:none; color:white; font-size:40px; cursor:pointer;">&times;</button>
+    
+    <iframe src="careers.html" style="width:100%; height:100%; border:none;"></iframe>
+</div>
 </body>
-</html>
+</html
